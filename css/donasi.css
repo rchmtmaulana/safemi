@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 10%;
+  background-color: white;
+  border-bottom: 1px solid #581219;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d80032;
+}
+
+.navbar .logo span {
+  color: #f78ca2;
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  font-size: 18px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.navbar .navbar-nav .nav-donasi {
+    color: #d80032;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #d80032;
+}
+
+.navbar-extra a {
+  color: black;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #d80032;
+}
+
+main {
+  margin-top: 4.3rem;
+  padding: 0 25%;
+}
+
+.judul {
+  padding-top: 7rem;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.judul h1 {
+  padding-bottom: 7rem;
+}
+
+.judul p {
+  /* margin-top: 10rem;
+  padding: 5rem 0 2rem 10rem;
+  text-align: center;
+  max-width: 55rem;
+  align-items: center; */
+  text-align: center;
+  font-size: 17px;
+  max-width: 40rem;
+  margin: auto;
+  line-height: 1.6;
+  padding-bottom: 7rem;
+  color: rgb(82, 82, 82);
+}
+
+.judul p, .penjelasan p {
+  padding-top: 2rem;
+  line-height: 30px;
+}
+
+.donasi-transfer h3, .donasi-emoney h3 {
+  padding: 5rem 0 1.5rem 0;
+}
+
+.donasi-transfer p, .donasi-emoney p {
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+/* footer */
+footer {
+  padding: 1rem 0 3rem;
+  margin-top: 6rem;
+  background-color: #f78ca2;
+  text-align: center;
+}
+
+footer .links {
+  margin-bottom: 1.5rem;
+}
+
+footer .links a {
+  color: white;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  color: white;
+}
+
+footer .links a:hover {
+  color: rgb(91, 90, 90);
+}

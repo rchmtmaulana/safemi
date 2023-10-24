@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 10%;
+  background-color: white;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d80032;
+}
+
+.navbar .logo span {
+  color: #f78ca2;
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  font-size: 18px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.navbar .navbar-nav .nav-beranda {
+  color: #d80032;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #d80032;
+}
+
+.navbar-extra a {
+  color: black;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #d80032;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 125px 10% 50px 10%;
+  display: flex;
+  align-items: center;
+}
+
+.hero .content {
+  display: flex;
+  align-items: center;
+}
+
+.content .content-description .title {
+  font-size: 5rem;
+  color: #b42642;
+  line-height: 1;
+}
+
+.content .content-description p {
+  line-height: 1.5rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  font-weight: 100;
+  color: black;
+}
+
+.content .content-image {
+  display: flex;
+}
+
+.content .content-image img {
+  width: 400px;
+  margin: auto;
+}
+
+/* program section */
+
+.program {
+  padding: 5rem 7%;
+  background-color: white;
+}
+
+.program h2 {
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.donasi,
+.adopsi {
+  color: black;
+  padding-bottom: 15px;
+}
+
+.program-card-donasi p,
+.program-card-adopsi p {
+  text-align: left;
+  max-width: 20rem;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  color: black;
+}
+
+.program-card-donasi button,
+.program-card-adopsi button {
+  background-color: #f78ca2;
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.program-card-donasi button a,
+.program-card-adopsi button a {
+  color: white;
+}
+
+.program-card-donasi button:hover,
+.program-card-adopsi button:hover {
+  color: white;
+  background-color: #e8627d;
+}
+
+#card {
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* lokasi section */
+.lokasi {
+  /* min-height: 90vh; */
+  padding-bottom: 5rem;
+  align-items: center;
+  background-image: url("../assets/lokasi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5rem;
+}
+
+.lokasi .lokasi-content {
+  padding: 1.4rem 7%;
+}
+
+.lokasi h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.row-lokasi {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.biringkanaya,
+.panakkukang,
+.rappocini {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+
+.biringkanaya-text,
+.panakkukang-text,
+.rappocini-text {
+  text-align: left;
+  max-width: 20rem;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  color: white;
+  text-decoration: none;
+}
+
+.biringkanaya-text a,
+.panakkukang-text a,
+.rappocini-text a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* lokasi section */
+
+.artikel {
+  padding: 5rem 7%;
+  background-color: white;
+}
+
+.artikel h2 {
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hernia,
+.dodo,
+.tnr {
+  color: black;
+  padding-bottom: 15px;
+}
+
+.artikel-card-hernia p,
+.artikel-card-dodo p,
+.artikel-card-tnr p {
+  text-align: left;
+  max-width: 25rem;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  color: black;
+}
+
+.artikel-card-hernia button,
+.artikel-card-dodo button,
+.artikel-card-tnr button {
+  background-color: #f78ca2;
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.artikel-card-hernia button:hover,
+.artikel-card-dodo button:hover,
+.artikel-card-tnr button:hover {
+  color: white;
+  background-color: #e8627d;
+}
+
+.artikel-card-hernia img,
+.artikel-card-dodo img,
+.artikel-card-tnr img {
+  width: 400px;
+}
+
+/* aside */
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+.social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #f78ca2;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-media li {
+  list-style-type: none;
+}
+
+.social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.social-media li a:hover,
+footer .links a:hover {
+  color: rgb(91, 90, 90);
+}
+
+/* kontak */
+#contact {
+  padding: 5rem 7%;
+}
+
+.contact h2 {
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 20px;
+  max-width: 40rem;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #835b64;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: white;
+  border: 1px solid #eee;
+  padding-left: 2rem;
+  border-radius: 15px;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background: none;
+  color: black;
+}
+
+.contact .row form .btn {
+  cursor: pointer;
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: #f78ca2;
+  border-radius: 15px;
+}
+
+/* footer */
+footer {
+  padding: 1rem 0 3rem;
+  margin-top: 3.5rem;
+  background-color: #f78ca2;
+  text-align: center;
+}
+
+footer .links {
+  margin-bottom: 1.5rem;
+}
+
+footer .links a {
+  color: white;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  color: white;
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: black;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  main .content {
+    flex-direction: column;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
+
+  .lokasi-content .row-lokasi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+  }
+
+  .biringkanaya-text,
+  .panakkukang-text,
+  .rappocini-text {
+    text-align: center;
+  }
+
+  .artikel .row {
+    flex-direction: column;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+}
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .program .row {
+    flex-direction: column;
+  }
+}
