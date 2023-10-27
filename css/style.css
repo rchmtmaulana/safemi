@@ -223,7 +223,7 @@ body {
   text-decoration: underline;
 }
 
-/* lokasi section */
+/* artikel section */
 
 .artikel {
   padding: 5rem 7%;
@@ -260,6 +260,11 @@ body {
   color: black;
 }
 
+.artikel-card-dodo p,
+.artikel-card-tnr p {
+  padding-bottom: 1.5rem ;
+}
+
 .artikel-card-hernia button,
 .artikel-card-dodo button,
 .artikel-card-tnr button {
@@ -286,6 +291,8 @@ body {
 .artikel-card-dodo img,
 .artikel-card-tnr img {
   width: 400px;
+  height: 300px;
+  padding: 1.3rem ;
 }
 
 /* aside */
@@ -323,6 +330,10 @@ main aside .social-media {
   font-size: 1.5rem;
   color: white;
   transition: all 0.1s ease-in-out;
+}
+
+footer .links .foot-beranda {
+  color: rgb(91, 90, 90);
 }
 
 .social-media li a:hover,
