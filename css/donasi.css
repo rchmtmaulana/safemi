@@ -45,7 +45,7 @@ body {
 }
 
 .navbar .navbar-nav .nav-donasi {
-    color: #d80032;
+  color: #d80032;
 }
 
 .navbar .navbar-nav a:hover {
@@ -58,6 +58,10 @@ body {
 
 .navbar .navbar-extra a:hover {
   color: #d80032;
+}
+
+#hamburger-menu {
+  display: none;
 }
 
 main {
@@ -76,11 +80,6 @@ main {
 }
 
 .judul p {
-  /* margin-top: 10rem;
-  padding: 5rem 0 2rem 10rem;
-  text-align: center;
-  max-width: 55rem;
-  align-items: center; */
   text-align: center;
   font-size: 17px;
   max-width: 40rem;
@@ -90,21 +89,26 @@ main {
   color: rgb(82, 82, 82);
 }
 
-.judul p, .penjelasan p {
+.judul p,
+.penjelasan p {
   padding-top: 2rem;
   line-height: 30px;
 }
 
-.donasi-transfer h3, .donasi-emoney h3 {
+.donasi-transfer h3,
+.donasi-emoney h3 {
   padding: 5rem 0 1.5rem 0;
 }
 
-.donasi-transfer p, .donasi-emoney p {
+.donasi-transfer p,
+.donasi-emoney p {
   line-height: 1.6;
   padding-bottom: 2rem;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -141,4 +145,40 @@ footer .links .foot-donasi {
 
 footer .links a:hover {
   color: rgb(91, 90, 90);
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: black;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
 }
