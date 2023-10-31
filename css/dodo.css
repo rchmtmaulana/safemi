@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 10%;
+  background-color: white;
+  border-bottom: 1px solid #581219;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d80032;
+}
+
+.navbar .logo span {
+  color: #f78ca2;
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  font-size: 18px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.navbar .navbar-nav .nav-donasi {
+  color: #d80032;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #d80032;
+}
+
+.navbar-extra a {
+  color: black;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #d80032;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+main {
+  margin-top: 10rem;
+  padding: 0 25%;
+}
+
+.judul h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.judul p {
+    padding: 4rem 0 2rem 0;
+    line-height: 2rem;
+    font-size: 17px;
+}
+
+.paragraf2 p,
+.paragraf3 p {
+  line-height: 2rem;
+  font-size: 17px;
+  padding-bottom: 2rem;
+}
+
+.paragraf2 .artikel-image1 {
+  display: flex;
+}
+
+.paragraf2 .artikel-image1 img {
+    width: 400px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* footer */
+footer {
+  padding: 1rem 0 3rem;
+  margin-top: 6rem;
+  background-color: #f78ca2;
+  text-align: center;
+}
+
+footer .links {
+  margin-bottom: 1.5rem;
+}
+
+footer .links a {
+  color: white;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  color: white;
+}
+
+footer .links a:hover {
+  color: rgb(91, 90, 90);
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  /* tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 60%;
+    }
+    #hamburger-menu {
+      display: inline-block;
+    }
+    .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: white;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.4s;
+    }
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar .navbar-nav a {
+      display: block;
+      color: black;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  }

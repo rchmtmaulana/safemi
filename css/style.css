@@ -168,7 +168,6 @@ body {
 
 /* lokasi section */
 .lokasi {
-  /* min-height: 90vh; */
   padding-bottom: 5rem;
   align-items: center;
   background-image: url("../assets/lokasi.jpg");
@@ -235,6 +234,10 @@ body {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
+}
+
+.artikel a {
+  color: white;
 }
 
 .row {
