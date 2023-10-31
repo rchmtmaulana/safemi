@@ -60,3 +60,113 @@ body {
   color: #d80032;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
+main {
+  padding: 0 27%;
+}
+
+.adopsi {
+  margin-top: 11rem;
+}
+
+.adopsi h1 {
+  font-size: 40px;
+}
+
+.adopsi p {
+  padding: 1.5rem 0;
+  font-size: 30px;
+}
+
+.text1 p {
+  padding: 1rem 0 1rem 0;
+  line-height: 2rem;
+  font-size: 17px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.judul-syarat {
+  padding: 2.5rem 0;
+}
+
+.judul-syarat h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.syarat ol {
+  padding-left: 3rem;
+  line-height: 2rem;
+  font-size: 17px;
+}
+
+footer {
+  padding: 1rem 0 3rem;
+  margin-top: 6rem;
+  background-color: #f78ca2;
+  text-align: center;
+}
+
+footer .links {
+  margin-bottom: 1.5rem;
+}
+
+footer .links a {
+  color: white;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  color: white;
+}
+
+footer .links .foot-adopsi {
+  color: rgb(91, 90, 90);
+}
+
+footer .links a:hover {
+  color: rgb(91, 90, 90);
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: black;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+}
